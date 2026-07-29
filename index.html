@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ecoagrario</title>
+    <link rel="stylesheet" href="css/materialize.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+</head>
+<body>
+    <nav class="green">
+    <div class="nav-wrapper container">
+        <a href="#" class="brand-logo">Ecoagrario</a>
+
+        <ul class="right">
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#">Productos</a></li>
+            <li><a href="#">Contacto</a></li>
+        </ul>
+    </div>
+</nav>
+
+
+<div class="container">
+    <div class="row">
+        <div class="col s12 m8 offset-m2">
+
+            <div class="input-field">
+                <i class="material-icons prefix">search</i>
+                <input type="text" id="buscar">
+                <label for="buscar">Buscar productos</label>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+
+
+<div class="container">
+    <section class="banner">
+    <div class="contenido-banner">
+
+         
+        
+    </div>
+</section>
+    <div class="row">
+
+    <!-- CARD 1 -->
+    <div class="col s12 m4">
+        <div class="card">
+
+            <div class="card-image">
+                <img src="img/verduras.jpg">
+            </div>
+
+            <div class="card-content">
+                <span class="card-title">Tomates</span>
+                <p>Tomates frescos directamente del campo.</p>
+            </div>
+
+            <div class="card-action">
+                <a href="#">Ver detalles</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CARD 2 -->
+    <div class="col s12 m4">
+        <div class="card">
+
+            <div class="card-image">
+                <img src="img/cafe.jpg">
+            </div>
+
+            <div class="card-content">
+                <span class="card-title">Café</span>
+                <p>Café orgánico producido por agricultores locales.</p>
+            </div>
+
+            <div class="card-action">
+                <a href="#">Ver detalles</a>
+            </div>
+
+        </div>
+    </div>
+
+    <!-- CARD 3 -->
+    <div class="col s12 m4">
+        <div class="card">
+
+            <div class="card-image">
+                <img src="img/frutas.jpg">
+            </div>
+
+            <div class="card-content">
+                <span class="card-title">Naranjas</span>
+                <p>Naranjas frescas y naturales. </p>
+                <br/>
+            </div>
+
+            <div class="card-action">
+                <a href="#">Ver detalles</a>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+<!-- PAGINACIÓN -->
+<div class="container">
+    <div class="row">
+        <div class="col s12 center">
+            <ul class="pagination">
+                <li class="disabled">
+                    <a href="#"><i class="material-icons">chevron_left</i></a>
+                </li>
+
+                <li class="active"><a href="#">1</a></li>
+                <li class="waves-effect"><a href="#">2</a></li>
+                <li class="waves-effect"><a href="#">3</a></li>
+
+                <li class="waves-effect">
+                    <a href="#"><i class="material-icons">chevron_right</i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+
+
+<!-- BOTÓN FLOTANTE -->
+<div class="fixed-action-btn">
+    <a class="btn-floating btn-large waves-effect waves-light green tooltipped"
+       data-position="left"
+       data-tooltip="Publicar producto"
+       href="publicar.html">
+
+        <i class="material-icons large">add</i>
+    </a>
+</div>
+
+
+<!-- FOOTER -->
+<footer class="green darken-3 white-text">
+    <div class="container">
+        <div class="row">
+
+            <div class="col s12 m4">
+                <h5>🌱 Ecoagrario</h5>
+                <p>
+                    La plataforma donde el campo colombiano se conecta.
+                    Publica y busca productos agrarios sin intermediarios.
+                </p>
+            </div>
+
+            <div class="col s12 m4">
+                <h5>Navegación</h5>
+                <p>
+                    <a href="index.html" class="white-text">Inicio</a><br>
+                    <a href="busqueda.html" class="white-text">Buscar productos</a><br>
+                    <a href="publicar.html" class="white-text">Publicar</a><br>
+                    <a href="login.html" class="white-text">Ingresar</a>
+                </p>
+            </div>
+
+            <div class="col s12 m4">
+                <h5>Categorías</h5>
+                <p>
+                    🐄 Ganado | 🌾 Granos <br>
+                    🍎 Frutas | 🥦 Verduras <br>
+                    🥛 Lácteos | 🌿 Otros
+                </p>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="center-align">
+        © 2025 Ecoagrario — Hecho para el campo colombiano
+    </div>
+</footer>
+
+
+<!-- Materialize JS -->
+<script src="js/materialize.min.js"></script>
+
+<script>
+document.addEventListener('DOMContentLoaded', function () {
+    M.Tooltip.init(document.querySelectorAll('.tooltipped'));
+});
+</script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</div>
+</div>
+</body>
+</html>
