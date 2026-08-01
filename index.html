@@ -14,15 +14,27 @@
 <body>
     <nav class="green">
     <div class="nav-wrapper container">
-        <a href="#" class="brand-logo">Ecoagrario prueba Github</a>
 
-        <ul class="right">
+        <a href="#" class="brand-logo">Ecoagrario</a>
+
+        <a href="#" data-target="menu-movil" class="sidenav-trigger">
+            <i class="material-icons">menu</i>
+        </a>
+
+        <ul class="right hide-on-med-and-down">
             <li><a href="#">Inicio</a></li>
             <li><a href="#">Productos</a></li>
             <li><a href="#">Contacto</a></li>
         </ul>
+
     </div>
 </nav>
+
+<ul class="sidenav" id="menu-movil">
+    <li><a href="#">Inicio</a></li>
+    <li><a href="#">Productos</a></li>
+    <li><a href="#">Contacto</a></li>
+</ul>
 
 
 <div class="container">
@@ -194,10 +206,14 @@
 
 <script>
 document.addEventListener('DOMContentLoaded', function () {
+
     M.Tooltip.init(document.querySelectorAll('.tooltipped'));
+
+    var elems = document.querySelectorAll('.sidenav');
+    M.Sidenav.init(elems);
+
 });
 </script>
-
 
 
 
